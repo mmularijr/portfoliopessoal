@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <!-- tag style para alterar o visual da página -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 120px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* efeito hover para os links do menu */
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        h2 {
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
+        }
+
+        #sobre-mim img {
+            max-width: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        /* visual do botão pra voltar para o topo */
+        .top-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .top-button:hover {
+            background-color: #555;
+        }
+        /* visual do formulário, decidi centralizar na página */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto; 
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 8px; /* Diminui o padding */
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 8px 16px; /* Diminui o padding */
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            align-self: flex-start; /* Alinha o botão à esquerda */
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <!-- links do menu para navegação interna -->
+        <a href="#sobre-mim">Sobre Mim</a>
+        <a href="#formacao-academica">Formação Acadêmica</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <!-- adicionar imagem -->
+        <img src="img/eu2.0.jpeg" alt="Minha Foto">
+        <p>
+            Olá! Meu nome é Marcio, tenho 21 anos e atualmente estou cursando minha primeira graduação em Análise e Desenvolvimento de Sistemas. Minha paixão pela programação começou com Python e, recentemente, decidi me aprofundar na área de análise de dados.
+            <br><br>
+            Além dos estudos, tenho hobbies que me ajudam a manter o equilíbrio e a inspiração no dia a dia. Gosto de ler livros e praticar musculação, atividades que me proporcionam tanto relaxamento quanto desafios físicos.
+            <br><br>
+            Estou entusiasmado com a jornada à frente e estou comprometido a aprender e crescer continuamente nesta emocionante área.
+        </p>
+        <!-- botão "Topo" -->
+        <a href="#" class="top-button">Topo</a>
+    </section>
+
+    <section id="formacao-academica">
+        <h2>Formação Acadêmica</h2>
+        <!-- criação de lista não ordenada para colocar a formação e cursos -->
+        <ul>
+            <li>Graduação em Análise e Desenvolvimento de Sistemas pela Uninter Centro Universitário Internacional 
+                <br>
+                Previsão de conclusão: Fevereiro de 2025.</li>
+
+        </ul>
+        <!-- criei uma sub-seção dentro da formação para colocar os cursos -->
+        <h3>Cursos</h3>
+        <ul>
+            <li>Programação em Python do básico ao avançado;
+                <br>
+                Udemy
+                <br>
+                Carga horária: 63,5 horas.
+            </li>
+            <br><br>
+        
+            <li>Certificado Profissional Análise de dados do Google;
+                <br>
+                Cousera
+                <br>
+                Concluído em Fevereiro de 2024.
+            </li>
+            
+        </ul>
+
+        <a href="#" class="top-button">Topo</a>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <p>Aqui estão alguns dos meus trabalhos:</p>
+        <ul>
+            <!-- mais uma vez usando a lista para adicionar os projetos -->
+            <li><a href="https://colab.research.google.com/drive/1G8rnTQkzMx_D7OqFWir3Xl2YEO_kszCr?usp=sharing" target="_blank">Calculadora</a>: Calculadora básica desenvolvida em Python no Google Colab, feita para aprimorar minhas habilidades com a linguagem.</li>
+            <br>
+            <li><a href="https://mmularijr.github.io/corinthianspage/" target="_blank">Site Corinthians</a>:  Site feito para aprimorar minhas habilidades, o objetivo era fazer uma página do time de futebol Corinthians. Em desenvolvimento.</li>
+        </ul>
+        <a href="#" class="top-button">Topo</a>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Você pode me contatar através dos seguintes meios:</p>
+        <ul>
+            <!-- Lista de informações de contato -->
+            <li>Email: marciomulari.jr@gmail.com</li>
+            <br>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/marcio-mulari-junior/" target="_blank">Marcio Mulari Junior</a></li>
+        </ul>
+
+        <h3>Envie uma mensagem</h3>
+        <form action="mailto:marciomulari.jr@gmail.com" method="post" enctype="text/plain">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Digite sua mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+        <a href="#" class="top-button">Topo</a>
+    </section>
+</body>
+</html>
+
